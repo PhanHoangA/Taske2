@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management System - Courses</title>
+  <meta name="description" content="Explore web development courses - HTML, CSS, Bootstrap, and JavaScript.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="courses-page">
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="coursesNavbar">
+      <a href="01_index.html" class="navbar-brand">Management System</a>
+      <ul class="navbar-nav">
+        <li class="nav-item-dropdown">
+          <button class="dropdown-toggle" id="dropdownBtn" type="button" aria-expanded="false">
+            Home
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <ul class="dropdown-menu" id="dropdownMenu">
+            <li><a href="01_index.html" class="dropdown-item">Home Page</a></li>
+            <li><a href="03_Login.html" class="dropdown-item">Login</a></li>
+            <li><a href="03_Login.html" class="dropdown-item">Sign Up</a></li>
+            <li><a href="#" class="dropdown-item">Help</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="courses-main">
+    <!-- Welcome Banner -->
+    <section class="welcome-banner">
+      <h1 class="welcome-title">Welcome to My Website</h1>
+      <p class="welcome-sub">Learn web development with our courses.</p>
+    </section>
+
+    <!-- Our Courses Section -->
+    <section class="courses-section">
+      <h2 class="courses-section-title">Our Courses</h2>
+
+      <div class="courses-grid">
+        <!-- Card 1: HTML -->
+        <div class="course-card card-html">
+          <div>
+            <h3 class="course-name">HTML</h3>
+            <p class="course-description">
+              Learn how to create the structure of web pages using headings, paragraphs, images, and links.
+            </p>
+          </div>
+          <button type="button" class="btn-learn-more" data-course="html">Learn More</button>
+        </div>
+
+        <!-- Card 2: CSS -->
+        <div class="course-card card-css">
+          <div>
+            <h3 class="course-name">CSS</h3>
+            <p class="course-description">
+              Learn how to style web pages with colors, fonts, spacing, and attractive layouts.
+            </p>
+          </div>
+          <button type="button" class="btn-learn-more" data-course="css">Learn More</button>
+        </div>
+
+        <!-- Card 3: Bootstrap -->
+        <div class="course-card card-bootstrap">
+          <div>
+            <h3 class="course-name">Bootstrap</h3>
+            <p class="course-description">
+              Build responsive websites quickly using Bootstrap's grid system and components.
+            </p>
+          </div>
+          <button type="button" class="btn-learn-more" data-course="bootstrap">Learn More</button>
+        </div>
+
+        <!-- Card 4: JavaScript -->
+        <div class="course-card card-javascript">
+          <div>
+            <h3 class="course-name">JavaScript</h3>
+            <p class="course-description">
+              Make web pages interactive with button clicks, form validation, and dynamic content.
+            </p>
+          </div>
+          <button type="button" class="btn-learn-more" data-course="javascript">Learn More</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Course Details Modal -->
+  <div class="modal-overlay" id="courseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Course Details</h3>
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-course-name" id="modalCourseName">HTML</h4>
+        <p class="modal-course-detail" id="modalCourseDetail">
+          HTML stands for HyperText Markup Language. It creates the structure of a web page using headings, paragraphs, images, and links.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-modal-close" id="modalCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copy">Copyright 2026 Management System</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

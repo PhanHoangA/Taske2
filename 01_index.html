@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management System - Home</title>
+  <meta name="description" content="Management System - Simplify your work, stay organized, and achieve more.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar" id="mainNavbar">
+      <a href="01_index.html" class="navbar-brand">Management System</a>
+      <ul class="navbar-nav">
+        <li class="nav-item-dropdown">
+          <button class="dropdown-toggle" id="dropdownBtn" type="button" aria-expanded="false">
+            Home
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <ul class="dropdown-menu" id="dropdownMenu">
+            <li><a href="03_Login.html" class="dropdown-item">Login</a></li>
+            <li><a href="03_Login.html" class="dropdown-item">Sign Up</a></li>
+            <li><a href="#" class="dropdown-item">Help</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Carousel / Slider Section -->
+  <section class="carousel-container" aria-label="Featured slides">
+    <div class="carousel-slides">
+      <!-- Slide 1 -->
+      <div class="carousel-slide active" style="background-image: url('photo-1454165804606-c3d57bc86b40.avif');">
+        <div class="slide-content">
+          <span class="slide-tagline">WORK SMARTER</span>
+          <h1 class="slide-title">Achieve Your Goals</h1>
+          <p class="slide-desc">Track progress, manage information, and improve productivity with a clear and organized workflow.</p>
+          <a href="03_Login.html" class="btn-hero">
+            Login Now &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-slide" style="background-image: url('photo-1521737711867-e3b97375f902.avif');">
+        <div class="slide-content">
+          <span class="slide-tagline">WORK TOGETHER</span>
+          <h2 class="slide-title">Better Team Collaboration</h2>
+          <p class="slide-desc">Keep your team connected, organize responsibilities, and manage tasks in one convenient place.</p>
+          <a href="03_Login.html" class="btn-hero">
+            Join Us &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-slide" style="background-image: url('photo-1497366754035-f200968a6e72.avif');">
+        <div class="slide-content">
+          <span class="slide-tagline">WELCOME TO OUR PLATFORM</span>
+          <h2 class="slide-title">Management Made Simple</h2>
+          <p class="slide-desc">Simplify your work, stay organized, and achieve more with our easy-to-use management system.</p>
+          <a href="03_Login.html" class="btn-hero">
+            Get Started &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="carousel-btn carousel-btn-prev" aria-label="Previous slide" type="button">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <button class="carousel-btn carousel-btn-next" aria-label="Next slide" type="button">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </section>
+
+  <!-- Our Goal Section -->
+  <section class="goal-section">
+    <div class="goal-container">
+      <div class="section-header">
+        <span class="section-tag">OUR GOAL</span>
+        <h2 class="section-title">Goal of This Website</h2>
+        <p class="section-desc">Our goal is to provide a simple, secure, and efficient management system that helps users organize their work, manage information, track progress, and improve productivity &mdash; all in one place.</p>
+      </div>
+
+      <div class="goal-grid">
+        <!-- Goal Image -->
+        <div class="goal-image-wrapper">
+          <img src="photo-1497366811353-6870744d04b2.avif" alt="Modern collaborative office and meeting room">
+        </div>
+
+        <!-- 4 Feature Cards -->
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-badge badge-purple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Easy to Use</h3>
+            <p class="feature-desc">A simple and clear interface for every user.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-badge badge-blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Secure</h3>
+            <p class="feature-desc">Keep information protected with appropriate security.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-badge badge-amber">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-title">Efficient</h3>
+            <p class="feature-desc">Save time by keeping tasks and information organized.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-badge badge-indigo">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Better Productivity</h3>
+            <p class="feature-desc">Track progress and work toward your goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ready to Get Started Section -->
+  <section class="cta-section">
+    <div class="cta-container">
+      <h2 class="cta-title">Ready to Get Started?</h2>
+      <p class="cta-desc">Create your account and organize your work today.</p>
+      <a href="03_Login.html" class="btn-cta">Create an Account</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Management System</div>
+      <div class="footer-copy">&copy; 2026 Management System. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
